@@ -20,7 +20,7 @@ app.use('/', mockApis);
 
 // Define a route to display an image from an external URL
 app.get('/', (req, res) => {
-    const imageUrl = 'https://www.interviewbit.com/blog/wp-content/uploads/2021/06/Backend-Developer-Roles-and-Responsibilities-1024x640.jpg'; // 
+    const imageUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgRNXnxNOoWcyxkeFtte3tNaYvbPpsSiKcjg&s'; // 
     res.send(`<img src="${imageUrl}" alt="Image">`);
 });
 

@@ -18,6 +18,12 @@ app.use('/queue', queueRoutes);
 // Define routes for mock APIs
 app.use('/', mockApis);
 
+// Define a route to display an image from an external URL
+app.get('/', (req, res) => {
+    const imageUrl = 'https://ddi-dev.com/uploads/backend-is.png'; // 
+    res.send(`<img src="${imageUrl}" alt="Image">`);
+});
+
 const PORT = 80; // Set the port number for the server
 
 // Start the server and listen on the specified port

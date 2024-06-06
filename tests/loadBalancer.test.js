@@ -28,8 +28,8 @@ describe('Load Balancer Tests', () => {
     });
 
     test('Mock API endpoints respond correctly', async () => {
-        const fastResponse = await axios.get('http://localhost:3000/fast');
-        const slowResponse = await axios.get('http://localhost:3000/slow');
+        const fastResponse = await axios.get('http://localhost:80/fast');
+        const slowResponse = await axios.get('http://localhost:80/slow');
         expect(fastResponse.data.message).toBe('Fast response');
         expect(slowResponse.data.message).toBe('Slow response');
     });

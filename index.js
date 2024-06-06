@@ -20,9 +20,10 @@ app.use('/', mockApis);
 
 // Define a route to display an image from an external URL
 app.get('/', (req, res) => {
-    const imageUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgRNXnxNOoWcyxkeFtte3tNaYvbPpsSiKcjg&s'; // 
-    res.send(`<img src="${imageUrl}" alt="Image">`);
+    const imageUrl = 'https://images.ctfassets.net/aq13lwl6616q/2w6RsKsVuc0IwHImyqx1TZ/030dff02ec89e35c72cfff4f66f0065e/Become_a_Backend_Developer.jpg';
+    res.send(`<img src="${imageUrl}" alt="Image" style="max-width: 100%; height: auto;">`);
 });
+
 
 const PORT = 80; // Set the port number for the server
 

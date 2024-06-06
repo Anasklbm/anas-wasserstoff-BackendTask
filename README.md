@@ -17,9 +17,14 @@ Welcome to the Wasserstoff Backend Task repository! This project aims to develop
 4. Access endpoints using Postman or any HTTP client.
 
 ## API Endpoints 📡
-- **Load Balancer Endpoints:** `/load-balancer`
-- **Queue Management Endpoints:** `/queue`
-- **Mock API Endpoints:** `/`
+- **Mock API Endpoints:**
+  - `/fast`: Simulates a fast API endpoint.
+  - `/slow`: Simulates a slow API endpoint.
+  - `/large-payload`: Simulates an endpoint for handling large payloads.
+- **Load Balancer Endpoints:** `/load-balancer/route`
+- **Queue Management Endpoints:**
+  - `/queue/enqueue`
+  - `/queue/dequeue`
 
 ## Demo APIs 🛠️
 - **Fast Endpoint:** [https://anas-wasserstoff-backendtask.onrender.com/fast](https://anas-wasserstoff-backendtask.onrender.com/fast)

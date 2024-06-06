@@ -18,7 +18,7 @@ app.use('/queue', queueRoutes);
 // Define routes for mock APIs
 app.use('/', mockApis);
 
-const PORT = 3000; // Set the port number for the server
+const PORT = 80; // Set the port number for the server
 
 // Start the server and listen on the specified port
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
